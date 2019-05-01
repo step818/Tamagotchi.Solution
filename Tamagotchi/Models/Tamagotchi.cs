@@ -21,6 +21,10 @@ namespace Tamagotchi.Models
       _attentionLevel = attentionLevel;
       _restLevel = restLevel;
     }
+    public static List<Pet> GetAll()
+    {
+      return _collection;
+    }
     public string GetName()
     {
       return _name;
